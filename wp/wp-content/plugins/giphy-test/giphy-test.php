@@ -97,6 +97,7 @@ function cmb_before_row_cb($field_args, $field) {
         <p>Below you can view/edit any of the Gifs that are currently associated with this post. If you want to add another Gif, click the "Add Another Gif" button below.</p>
         <p>If you know the URL of the exact Gif you would like to add, you can paste that into the "Gif URL" input. If you would like to search for a gif, click "Add/Replace Gig" and use the Giphy search functionality to select your Gif.</p>
         <p><strong>Important:</strong> You must click <strong>Update</strong> in order to save your changes and see theme reflected on the site.</p>
+        <hr />
     </div>
 <?php
 }

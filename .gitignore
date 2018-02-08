@@ -1,9 +1,9 @@
-!wordpress
-wordpress/*
-!wordpress/wp-content/
+!wp
+wp/*
+!wp/wp-content/
 
-wordpress/wp-content/*
-!wordpress/wp-content/plugins/
+wp/wp-content/*
+!wp/wp-content/plugins/
 
-wordpress/wp-content/plugins/*
-!wordpress/wp-content/plugins/giphy-test/
+wp/wp-content/plugins/*
+!wp/wp-content/plugins/giphy-test/

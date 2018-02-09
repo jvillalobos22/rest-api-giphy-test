@@ -75,8 +75,7 @@ const Article = ({ article, tags }) => {
     const date = getPublishDate(article)
     const article_tags = (article) ? getTags(article) : []
     const article_gifs = (article && article.gifs) ? article.gifs : []
-    console.log("article_gifs")
-    console.log(article_gifs)
+
     return (
         (article) &&
             <div className="article">
@@ -100,7 +99,7 @@ const Article = ({ article, tags }) => {
                     <img className="featured_image" src={ featured_image.featured_image_url } alt={ featured_image.featured_image_alt } />
                 }
                 <div className="article-body" dangerouslySetInnerHTML={{__html: article.body }}></div>
-                <Gifs tags={article_tags} gifs={article_gifs} />
+                <Gifs gifs={article_gifs} />
             </div>
     )
 }

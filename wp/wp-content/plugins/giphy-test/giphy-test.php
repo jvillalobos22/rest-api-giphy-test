@@ -47,7 +47,6 @@ function cmb2_sample_metaboxes() {
         'show_in_rest' => true,
         'show_names'    => false, // Show field names on the left
         'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // Keep the metabox closed by default
     ) );
 
     $group_field_id = $cmb->add_field( array(
@@ -57,7 +56,6 @@ function cmb2_sample_metaboxes() {
         'before_group' => 'cmb_before_row_cb',
         'after_group' => 'cmb_after_row_cb',
         'classes' => 'giphy_group_field',
-        // 'repeatable'  => false, // use false if you want non-repeatable group
         'options'     => array(
             'group_title'   => __( 'Gif {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
             'add_button'    => __( 'Add Another Gif', 'cmb2' ),
@@ -85,6 +83,9 @@ function cmb2_sample_metaboxes() {
     ) );
 }
 
+/* This callback function will create the html for the plugin instructions that
+ * are provided above the Gif meta in the post editor.
+ */
 function cmb_before_row_cb($field_args, $field) {
 ?>
     <div class="gif_instructions">
@@ -96,6 +97,8 @@ function cmb_before_row_cb($field_args, $field) {
 <?php
 }
 
+/* This callback function creates the html for Giphy selector pane.
+ */
 function cmb_after_row_cb($field_args, $field) {
 ?>
     <div class="gif_selector_pane">
@@ -115,12 +118,13 @@ function cmb_after_row_cb($field_args, $field) {
 <?php
 }
 
+/* This callback function will create the preview image for each gif that is
+ * already saved to the post.
+ */
 function cmb_after_url_input_cb($field_args, $field) {
 ?>
-    <?php //if($field->value() != '') { ?>
-        <strong>Preview</strong>
-        <img class="gif_image" src="<?php echo $field->value() ?>" />
-    <?php //} ?>
+    <strong>Preview</strong>
+    <img class="gif_image" src="<?php echo $field->value() ?>" />
     <button class="open_giphy_search btn" type="button">Add/Replace Gif</button>
 <?php
 }

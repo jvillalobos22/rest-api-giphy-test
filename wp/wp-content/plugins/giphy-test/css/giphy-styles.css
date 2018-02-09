@@ -184,3 +184,12 @@ span#giphyErrorMessage {
 .search_results img {
     width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+    .search_results li {
+        width: 100%;
+    }
+    .giphy_group_field .cmb-repeatable-group > .cmb-row.postbox {
+        width: 100%;
+    }
+}

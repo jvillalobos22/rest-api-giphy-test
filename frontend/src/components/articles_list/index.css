@@ -50,8 +50,3 @@ h2::after {
     color: #5C515A; /* Charcoal */
     line-height: 1.6;
 }
-
-.article_body h1, .article_body h2, .article_body h3, .article_body h4, .article_body h5, .article_body h6, .article_body p {
-    font-size: 1rem;
-    color: black;
-}

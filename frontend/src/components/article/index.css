@@ -41,3 +41,8 @@ img.featured_image {
 .article .article-body {
     margin-top: 1rem;
 }
+
+.article-body img {
+    max-width: 100%;
+    height: auto;
+}

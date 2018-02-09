@@ -33,6 +33,15 @@ const Article = ({ article, tags }) => {
         }
     }
 
+    const getGifs = (article) => {
+        console.log(article)
+        if(article && article.cmb2) {
+            let gifs = article.cmb2.giphy_metabox.post_gif ? article.cmb2.giphy_metabox.post_gif : [];
+        } else {
+            return []
+        }
+    }
+
     const getPublishDate = (article) => {
         if(article) {
             let newdate = new Date(article.publish_date)
@@ -65,7 +74,9 @@ const Article = ({ article, tags }) => {
     const authorname = getAuthor(article)
     const date = getPublishDate(article)
     const article_tags = (article) ? getTags(article) : []
-
+    const article_gifs = (article && article.gifs) ? article.gifs : []
+    console.log("article_gifs")
+    console.log(article_gifs)
     return (
         (article) &&
             <div className="article">
@@ -89,7 +100,7 @@ const Article = ({ article, tags }) => {
                     <img className="featured_image" src={ featured_image.featured_image_url } alt={ featured_image.featured_image_alt } />
                 }
                 <div className="article-body" dangerouslySetInnerHTML={{__html: article.body }}></div>
-                <Gifs tags={article_tags} />
+                <Gifs tags={article_tags} gifs={article_gifs} />
             </div>
     )
 }

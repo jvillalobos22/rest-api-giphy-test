@@ -8,8 +8,6 @@
 }
 
 /* Instructions Styles */
-.gif_instructions {
-}
 .gif_instructions p {
     font-size: 1rem;
 }
@@ -104,6 +102,9 @@
 }
 
 /* GIF Selector Pane Styles */
+#giphy_metabox {
+    min-height: 1000px;
+}
 .giphy_metabox {
     position: relative;
 }

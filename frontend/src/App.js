@@ -51,6 +51,7 @@ class App extends Component {
                 excerpt: shorten(item.content.rendered, 350),
                 body: item.content.rendered,
                 tags: item.tags,
+                gifs: item.cmb2.giphy_metabox.post_gif,
             }
         })
         this.setState((prevState, props) => {

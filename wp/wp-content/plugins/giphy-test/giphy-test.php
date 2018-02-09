@@ -73,9 +73,6 @@ function cmb2_sample_metaboxes() {
         'before' => '<strong>Gif URL</strong>',
         'after' => 'cmb_after_url_input_cb',
         'classes' => 'gif_url',
-        'attributes' => array(
-            'required' => 'required',
-        ),
         'default' => '',
         'type' => 'text_url',
     ) );
@@ -83,9 +80,6 @@ function cmb2_sample_metaboxes() {
     $cmb->add_group_field( $group_field_id, array(
         'name' => 'Tag',
         'id'   => 'tag',
-        'attributes' => array(
-            'required' => 'required',
-        ),
         'before' => '<strong>Gif Tag</strong>',
         'type' => 'text',
     ) );

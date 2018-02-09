@@ -1,0 +1,18 @@
+.sidebar-container {
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: -1px 1px 2px rgba(155,155,155,0.2);
+}
+
+h3 {
+    margin-bottom: 0.9375rem;
+    font-weight: 700;
+}
+
+a {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 0.6375rem;
+}

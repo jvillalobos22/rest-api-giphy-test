@@ -1,0 +1,50 @@
+.App {
+    width: 100%;
+}
+
+@keyframes fade-from-left {
+    from {
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0.9375rem;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.main-content, .sidebar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        width: 70%;
+        padding-right: 0.6375rem;
+    }
+    .sidebar {
+        width: 30%;
+        padding-left: 0.6375rem;
+    }
+}

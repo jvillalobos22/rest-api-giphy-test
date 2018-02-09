@@ -123,10 +123,10 @@ function cmb_after_row_cb($field_args, $field) {
 
 function cmb_after_url_input_cb($field_args, $field) {
 ?>
-    <?php if($field->value() != '') { ?>
+    <?php //if($field->value() != '') { ?>
         <strong>Preview</strong>
         <img class="gif_image" src="<?php echo $field->value() ?>" />
-    <?php } ?>
+    <?php //} ?>
     <button class="open_giphy_search btn" type="button">Add/Replace Gif</button>
 <?php
 }

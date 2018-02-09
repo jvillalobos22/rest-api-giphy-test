@@ -1,0 +1,31 @@
+.app-header {
+    border: 1px solid #D2CDCC; /* Smoke Gray */
+    display: block;
+    color: white;
+    width: 100%;
+}
+
+.app-header a, .app-header h1 {
+    color: #5C515A; /* Charcoal */
+    text-decoration: none;
+    flex-grow: 1;
+    display: flex;
+    margin: 0;
+    text-align: left;
+    align-items: center;
+}
+
+.app-title {
+    font-size: 1.5em;
+    padding-left: 1rem;
+}
+
+.eaze-logo {
+    animation: fade-from-left 0.75s ease;
+    height: 40px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.app-header a:hover .eaze-logo {
+    transform: scale(1.075);
+}
